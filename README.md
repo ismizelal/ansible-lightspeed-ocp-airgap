@@ -41,20 +41,33 @@ README.md: Find detailed documentation and step-by-step guides on how to prepare
 Ansible Playbooks: Explore the Ansible playbooks specially tailored for the air-gapped installation of OpenShift.
 
 local-playbook.yml: sets up your MacBook Pro
+
 bastion-playbook.yml: sets up the bastion host
+
 cluster-playbook.yml: installs the cluster
+
 install-config.yml: 
+
 firewall-playbook.yml: configures the pfSense firewall for different connection modes
+
 roles: This directory contains additional resources like configuration files, templates, and scripts needed for the deployment. It is used by all of the playbooks. Here is the current roles
 
 add-disk-to-bastion
+
 fulfill-bastion-prerequisites
+
 install-ocp-disconnected-installation-tools
+
 setup-mirror-registry
+
 install-imageset
+
 install-config.yaml
+
 scrape-imageContentSources
+
 build-openshift-cluster
+
 vars: Refers to a file that contains variable definitions used within your playbooks and roles. Vars files are a way to separate data from your Ansible code, making it more modular and easier to manage.
 
 ansible.cfg: This file allows you to customize Ansible's behavior and settings. Define the path where Ansible should look for roles, which are reusable collections of tasks and variables. Configure SSH-related options such as SSH private key file, SSH agent usage, and control connection parameters.
